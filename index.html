@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up-Form</title>
+    <title>Sign-Up</title>
     <link rel="stylesheet" href="./style.css">
-    
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./imgs/lost.png" type="image/png">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
             </div>
         </div>
 
-        <form class="form-container">
+        <form class="form-container" method="get">
             
             <div class="header-form">   
                 <h2>Let 's take the <span>first</span> step towards a better world.</h2>
@@ -28,28 +29,30 @@
 
             <div class="main-form">
                 <div>
-                    <label>FIRST NAME :</label>
-                    <input type="text">
+                    <label for="fName">FIRST NAME :</label>
+                    <input id="fName" type="text" name="firstName" required>
                 </div>
                 <div>
-                    <label>LAST NAME :</label>
-                    <input type="text">
+                    <label for="lName" >LAST NAME :</label>
+                    <input id="lName" type="text" name="lastName" required>
                 </div>
                 <div>
-                    <label>EMAIL :</label>
-                    <input type="email">
+                    <label for="email" >EMAIL :</label>
+                    <input id="email" type="email" name="email" required>
                 </div>
                 <div>
-                    <label>PHONE NUMBER :</label>
-                    <input type="tel">
+                    <label for="phoneNumber">PHONE NUMBER :</label>
+                    <input id="phoneNumber" type="tel" name="phoneNumber" required>
                 </div>
                 <div>
-                    <label>PASSWORD :</label>
-                    <input type="password">
+                    <label for="password" >PASSWORD :</label>
+                    <input id="password" type="password" name="password" required>
+                    <span class="error-message">*password do not match.</span>
                 </div>
                 <div>
-                    <label>CONFIRM PASSWORD :</label>
-                    <input type="password">
+                    <label for="confirmPassword">CONFIRM PASSWORD :</label>
+                    <input id="confirmPassword" type="password" name="confirmPassword" required>
+    
                 </div>
             </div>
 
@@ -59,9 +62,16 @@
             </div>
 
         </form>
-        
 
     </main>
+
+    <footer class="footer">
+        Copyright © &nbsp;
+        <p>elaaasri</p>&nbsp; &nbsp;
+        <a href="https://github.com/elaaasri">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
 
 </body>
 </html>

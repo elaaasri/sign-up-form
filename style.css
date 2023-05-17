@@ -5,16 +5,16 @@
 }
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom, #f0c48a, #e6bf88, #d89436, #a2691a);
-
+    background: linear-gradient(to bottom,rgb(226, 89, 39), #f0c48a, #e6bf88);
 }
 .container {
     display: flex;
-    height: 80%;
-    width: 70%;
+    height: 450px;
+    width: 900px;
     border-radius: 12px;
     box-shadow: 0px 15px 40px black;
 }
@@ -65,11 +65,9 @@ body {
     font-style: italic;
     font-weight: 1000;
     letter-spacing: 0.8rem;
-    font-size: 35px;
 }
 .header-form {
     letter-spacing: 0.2rem;
-    font-size: 15px;
     font-weight: bold;
     height: 30%;
     padding: 30px;
@@ -89,6 +87,8 @@ body {
     width: 80%;
     height: 30px;
     border-radius: 4px;
+    /* border-color: #E5E7EB; */
+    border: solid #E5E7EB 2px;
 }
 .footer-form {
     display: flex;
@@ -105,8 +105,8 @@ body {
     border-radius: 20px;
     font-family: "MyFont";
     background-color: inherit;
-    color: rgb(255, 94, 0);
     color: orangered;
+    /* background-color: rgb(255, 106, 0) ; */
 }
 .footer-form>p {
     font-family: "MyFont";
@@ -118,4 +118,44 @@ label {
 .footer-form>p>a {
     color: orangered;
     text-decoration: none;
+}
+#password:invalid,
+#confirmPassword:invalid {
+    border: red solid 2.5px;
+}
+
+#password:valid,
+#confirmPassword:valid {
+    border: green solid 2.5px;
+}
+.error-message {
+    display: none;
+    color: red;
+}
+#password:invalid + .error-message {
+    display: block;
+}
+input:focus {
+    border: solid 5px rgb(203, 128, 75) !important;
+    box-shadow: 0px 4px 5px black;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.footer > p {
+    font-size: 30px;
+    margin: 0;  
+    font-style: italic;
+    font-family: "MyFont";
+}
+.fa-github {
+    color: orangered;
+    font-size: 25px;
+    transition: transform 0.35s ease-in-out;
+}
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.3);
 }
