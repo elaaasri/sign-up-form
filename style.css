@@ -48,7 +48,7 @@ body {
     padding-left: 30px;
 }
 .odin-container>p,h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-family: "MyFont";
 }
 @font-face {
@@ -87,7 +87,6 @@ body {
     width: 80%;
     height: 30px;
     border-radius: 4px;
-    /* border-color: #E5E7EB; */
     border: solid #E5E7EB 2px;
 }
 .footer-form {
@@ -106,7 +105,6 @@ body {
     font-family: "MyFont";
     background-color: inherit;
     color: orangered;
-    /* background-color: rgb(255, 106, 0) ; */
 }
 .footer-form>p {
     font-family: "MyFont";
@@ -136,7 +134,6 @@ label {
     display: block;
 }
 input:focus {
-    border: solid 5px rgb(203, 128, 75) !important;
     box-shadow: 0px 4px 5px black;
 }
 .footer {
@@ -150,6 +147,9 @@ input:focus {
     margin: 0;  
     font-style: italic;
     font-family: "MyFont";
+}
+input[type="submit"]:hover {
+    background: linear-gradient(to left, orange,orangered);
 }
 .fa-github {
     color: orangered;
