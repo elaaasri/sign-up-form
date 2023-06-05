@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom,rgb(226, 89, 39), #f0c48a, #e6bf88);
+    background: linear-gradient(to bottom, rgb(236, 183, 131), white);
 }
 .container {
     display: flex;
@@ -35,7 +35,7 @@ body {
     position: absolute;
 }
 .odin-picture {
-    width: 40px;
+    width: 50px;
 }
 .odin-container {
     position: relative;
@@ -43,13 +43,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(230, 169, 77, 0.3);
+    background-color: rgba(191, 110, 18, 0.3);
     gap: 10px;
-    padding-left: 30px;
 }
-.odin-container>p,h2 {
-    font-size: 35px;
+.odin-container>p {
     font-family: "MyFont";
+    font-size: 30px;
+    color: white;
+
+}
+h2 {
+    font-family: "MyFont";
+
 }
 @font-face {
     font-family: "MyFont";
@@ -60,11 +65,6 @@ body {
     width: 700px;
     height: 100%;
     flex-direction: column;
-}
-.header-form>h2>span {
-    font-style: italic;
-    font-weight: 1000;
-    letter-spacing: 0.8rem;
 }
 .header-form {
     letter-spacing: 0.2rem;
@@ -141,18 +141,20 @@ input:focus {
     justify-content: center;
     align-items: center;
     padding-top: 30px;
+    font-size: 11px;
 }
 .footer > p {
-    font-size: 30px;
+    font-size: 18px;
     margin: 0;  
     font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
     font-family: "MyFont";
 }
 input[type="submit"]:hover {
-    background: linear-gradient(to left, orange,orangered);
+    background-color: white;
 }
 .fa-github {
-    color: orangered;
+    color: black;
     font-size: 25px;
     transition: transform 0.35s ease-in-out;
 }
